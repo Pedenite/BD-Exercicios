@@ -45,27 +45,25 @@
 \textbf{Registro} é um conjunto de campos agrupado, que mantém um nível de organização mais alto. Se tratam de uma ferramenta lógica e não física que possuem tamanho fixo em geral. 
 
 \noindent
-\textbf{Arquivo} é um conjunto de dados que se relacionam de alguma forma, ou seja, juntos descrevem uma informação ou conjunto de informações. Podem ter diferentes formatos que proporcionam diversos usos como armazenar o código de um algoritmo, logs, informações processadas por um programa ou até fotos e vídeos.\\
+\textbf{Arquivo} é um conjunto de dados que se relacionam de alguma forma, ou seja, juntos descrevem uma informação ou conjunto de informações. Podem ter diferentes formatos que proporcionam diversos usos como armazenar o código de um algoritmo, logs, informações processadas por um programa ou até fotos e vídeos.
 
 \noindent
-\textbf{Organização de arquivos}\\
+\textbf{Organização de arquivos} trata-se do método usado para dispor todos esses conjuntos de dados, visando uma melhor acessibilidade a esses dados.
 
-\noindent
-\textbf{Tipos de organização de arquivos}
+\section{Arquivo sequencial e arquivo direto}
+Em um arquivo sequencial, registros são distribuídos em uma ordem arbitrária, um após o outro, dentro da área.
+Já em um arquivo direto (acesso aleatório), ao invés de um índice é utilizada uma função (hashing) que calcula o endereço do registro apartir do valor da chave do registro
 
-\section{Explique as diferenças entre arquivo sequencial e arquivo direto (acesso aleatório)}
-questão 2
+\section{Operações básicas com arquivos}
+Dentre as operações básicas com arquivos, tem-se as de abertura, leitura, escrita e fechamento. A maioria das linguagens de programação apresentam suporte a essas operações em bibliotecas já existentes.
 
-\section{Quais as operações básicas com arquivos?}
-questão 3
+\section{Manipulação de arquivos com a linguagem Java}
+Uma forma que a linguagem java permite a manipulação de arquivos é usando um objeto do tipo FileReader/Writer para ler/escrever no arquivo a ser referenciado no construtor, sendo aberto durante a chamada dele.
+Em seguida, o programador pode usar os vários métodos disponíveis para a manipulação desejada do arquivo e, por fim, chamar o método que fecha o arquivo quando finalizar as manipulações.
 
-\section{Explique, resumidamente e com suas palavras, como a linguagem Java permite a manipulação de arquivos}
-questão 4
+\section{Definição dos seguintes conceitos:}
 
-\section{Defina os seguintes conceitos:}
-questão 5
-
-\subsection{sistema de informação (SI) e seus componentes}
+\subsection{Sistema de informação (SI) e seus componentes}
 questão 5.1
 
 \subsection{dado e banco de dados (BD)}
