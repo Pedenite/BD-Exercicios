@@ -51,8 +51,8 @@
 \textbf{Organização de arquivos} trata-se do método usado para dispor todos esses conjuntos de dados, visando uma melhor acessibilidade a esses dados.
 
 \section{Arquivo sequencial e arquivo direto}
-Em um arquivo sequencial, registros são distribuídos em uma ordem arbitrária, um após o outro, dentro da área.
-Já em um arquivo direto (acesso aleatório), ao invés de um índice é utilizada uma função (hashing) que calcula o endereço do registro apartir do valor da chave do registro
+Em um arquivo sequencial, registros são distribuídos em uma certa ordem, um após o outro, dentro de uma área.
+Já em um arquivo direto (acesso aleatório), ao invés de um índice é utilizada uma função (hashing) que calcula o endereço do registro a partir da chave do registro.
 
 \section{Operações básicas com arquivos}
 Dentre as operações básicas com arquivos, tem-se as de abertura, leitura, escrita e fechamento. A maioria das linguagens de programação apresentam suporte a essas operações em bibliotecas já existentes.
@@ -64,22 +64,33 @@ Em seguida, o programador pode usar os vários métodos disponíveis para a mani
 \section{Definição dos seguintes conceitos:}
 
 \subsection{Sistema de informação (SI) e seus componentes}
-questão 5.1
+Sistema de informação é um conjunto de componentes para coletar, armazenar e processar dados, além de disponibilizar informação, conhecimento e produtos digitais.
+Um sistema de informação é essencialmente composto por \textit{hardware}, \textit{software}, banco de dados, rede e pessoas que se integram para executar entrada, saída, processo, controle e feedback.
 
-\subsection{dado e banco de dados (BD)}
-questão 5.2
+\subsection{Dado e banco de dados (BD)}
+Um dado é uma informação armazenada por um sistema, podendo ser composto de números, caracteres, ou até um conjunto desses vindo de um programa.
 
-\subsection{esquema de BD e instância de BD}
-questão 5.3
+Banco de dados é um modo de persistir esses dados de forma a permitir um acesso a eles com compartilhamento facilitado, menos redundâncias e maior segurança.
 
-\subsection{SGBD; catálogo (ou dicionário) de um BD}
-questão 5.3
+\subsection{Esquema de BD e instância de BD}
+O esquema de um banco de dados é uma representação de sua estrutura de acordo com o modelo de dados.
+Já a instância seria como os dados estão organizados no banco em um certo instante.
+
+\subsection{SGBD e catálogo de um BD}
+Sistema de gerenciamento de banco de dados são ferramentas que permitem o acesso a todos os dados do banco de forma organizada, contendo tabelas, colunas, e geralmente dispõem de uma linguagem como o SQL para a manipulação dos dados,
+que permite coisas como a inserção, seleção e deleção de dados em uma tabela, organizando os dados por coluna.
+Já o catálogo (ou dicionário) de um BD é uma unidade que armazena os esquemas utilizados pelo banco mantido pelo SGBD.
 
 \subsection{sistema de bancos de dados (SBD) e seus componentes}
 questão 5.4
 
-\section{Escrever um algoritmo para criar um arquivo contendo os dados dos produtos de uma loja. Os campos dos registros são: código do produto, descrição do produto e quantidade do produto em estoque. O algoritmo deve conter as operações: inclusão de produtos e listagem de todos os produtos. Após o algoritmo pronto, codifique-o usando a linguagem Java: faça uso de serialização/desserialização de objetos}
-questão 6
+\section{Algoritmo}
+\begin{itemize}
+\item Criar um algoritmo para criar um arquivo contendo os dados dos produtos de uma loja.
+\item Os campos dos registros são: código do produto, descrição do produto e quantidade do produto em estoque.
+\item O algoritmo deve conter as operações: inclusão de produtos e listagem de todos os produtos.
+\item Deve-se usar a linguagem Java contendo a serialização/desserialização de objetos
+\end{itemize}
 
 \section{Qual a diferença entre o papel do administrador de dados e do administrador de bancos de dados de uma organização? Explique as funções que cada papel deve exercer}
 questão 7
