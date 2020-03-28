@@ -29,10 +29,43 @@
 
 \setcounter{section}{14}
 \section{Tipos de Linguagens SBD}
-Que tipos de linguagens existem no contexto de Sistemas de Bancos de Dados (DDL, DML, etc.)? Quais os objetivos de cada linguagem?
+Os tipos de linguagem de um SBD são:
+\begin{itemize}
+
+\item
+\textbf{DDL}, \textit{Data Definition Language} - Tem como objetivo, definir a estrutura dos dados e esquemas do BD.
+
+Dentre os comandos DDL, temos \texttt{CREATE}, \texttt{ALTER} e \texttt{DROP}
+
+\item
+\textbf{DML}, \textit{Data Manipulation Language} - Tem como objetivo, acessar e manipular os dados das tabelas.
+
+São comandos DML : \texttt{SELECT}, \texttt{INSERT}, \texttt{DELETE} e \texttt{UPDATE}
+
+\item
+\textbf{DTL}, \textit{Data Transaction Language} - Tem como objetivo, o controle de transação, que roda as mudanças feitas pelo DML.
+
+São comandos DTL : \texttt{BEGIN TRANSACTION}, \texttt{COMMIT} e \texttt{ROLLBACK}
+
+\item
+\textbf{DCL}, \textit{Data Control Language} - Tem como objetivo, controlar a parte de segurança do banco de dados, retornando os dados salvos ou guardados.
+
+São comandos DCL : \texttt{GRANT}, \texttt{REVOKE} e \texttt{DENY}
+
+\item 
+\textbf{SDL}, \textit{Storage Definition Language} - Tem como objetivo, especificar o esquema interno.
+
+\item
+\textbf{VDL}, \textit{View Definition Language} - Tem como objetivo, especificar a visão do usuário e seu mapeamento para um esquema conceitual.
+
+\end{itemize}
 
 \section{Modelo de Dados}
-O que é um Modelo de Dados? Defina o objetivo de um Modelo de Dados.
+Um modelo de dados é o modelo para organização dos dados de um BD que pode ter diferentes tipos de abstração. É classificado como alto nível, nível médio e baixo nível.
+
+O alto nível representa a forma como os dados são compreendidos pelos usuários. Já o nível médio é implementado pelo SGBD e é divido em vários tipos, como modelo relacional, hierárquico, orientado a objetos, entre outros. Por fim, o baixo nível, simplesmente descreve como os dados são armazenados fisicamente.
+
+O principal objetivo de um modelo de dados é o de disponibilizar uma representação conceitual dos dados.
 
 \section{Atividade de Projeto de BD}
 Explique o que é a atividade de Projeto de Banco de Dados. Caracterize os níveis de abstração envolvidos: descritivo, conceitual, operacional e físico.
