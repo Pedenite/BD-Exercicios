@@ -1,0 +1,44 @@
+Praticando o uso dos construtores do MER: dado o esquema
+descritivo a seguir, construa um esquema conceitual de um BD
+para uma universidade.
+⚫ É preciso conhecer de cada aluno: nome, matrícula, documentos
+pessoais de identificação (CPF e identidade são únicos para
+cada aluno), endereço, telefone(s) de contato, data de
+nascimento, sexo, graduação(ões), cursos em que está
+matriculado e disciplinas em que está matriculado. Cada
+estudante possui uma matrícula para cada curso que está
+matriculado. Pode haver aluno sem disciplina e sem curso na
+universidade.
+⚫ Deve-se prover um relatório contendo a grade de avaliação dos
+alunos por turma contendo as suas notas. Deve-se prover
+também o histórico escolar contendo cada disciplina já cursada
+pelo aluno dentro de um curso (com o ano, semestre em que foi
+cursada e o resultado final). Restrição: o aluno só pode se
+matricular em turmas de disciplinas de seu(s) curso(s).
+⚫ Cada disciplina tem um nome, um código, um número de horasaula semanais, e pode ter disciplinas como pré-requisito. O valor
+do código e do nome é único para cada disciplina. Para cada
+disciplina de um curso podem ser abertas várias turmas. Uma
+disciplina está vinculada, no máximo, à um curso. Toda disciplina
+possui vínculo com, no mínimo, um curso.
+⚫ Cada turma é caracterizada por um código, o número do ano e
+do semestre em que ela se realiza, o professor responsável, e
+o(s) número(s) da(s) sala(s) que ela utiliza. Uma turma só existe
+se estiver vinculada à uma única disciplina. Código da turma é
+único em um ano e um semestre para uma determinada
+disciplina.
+⚫ Cada departamento é caracterizado por um nome, um código,
+um telefone. Tanto o nome como o código têm valores únicos
+para cada departamento. Cada curso tem um nome, um código,
+um número de horas de aula semestrais e um único
+departamento responsável. O valor do código é único para cada
+curso. 
+⚫ A universidade emprega professores e funcionários técnicoadministrativos. O funcionário tem uma matrícula que o identifica
+univocamente. Além disso devem ser guardados o nome,
+endereço, sexo, documentos pessoais, telefone(s) de contato,
+departamento ao qual está vinculado e data de admissão. Um
+funcionário não está vinculado a mais de um departamento.
+⚫ Um professor pode ministrar várias disciplinas. Deve-se
+conhecer a capacitação do professor: congressos, cursos de
+pós-graduação, cursos de extensão, publicações, etc. É
+importante saber local e data de cada capacitação do professor,
+assim como, uma breve descrição dessa capacitação.

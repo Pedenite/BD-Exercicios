@@ -1,0 +1,7 @@
+1) Dados os requisitos de dados abaixo, modele usando o MER (utilize somente os construtores Tipo Entidade e Atributo).
+
+1.1) Departamento com os atributos: nome, número, localizações, gerente e data de início da gerência. O atributo localizações é multivalorado. Número é o identificador.
+
+1.2) Empregado com os atributos: nome, CPF, sexo, endereço, telefone, salário, data de nascimento, idade, número do departamento que trabalha. Nome (nome e sobrenome), endereço (rua, bairro, complemento, cidade, estado, CEP) e telefone (DDD e número)são atributos compostos. O atributo telefone é multivalorado (1 até 3 telefones). O atributo idade é derivado do atributo data de nascimento. CPF é identificador.
+
+1.3) Empresa com os atributos: nome, CNPJ, endereço, nomes dos sócios(1 até 5 sócios), empregados da empresa (1 até 1000), departamentos da empresa (1 até 10). CNPJ é identificador

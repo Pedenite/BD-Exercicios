@@ -1,0 +1,37 @@
+Exercícios Práticos de Modelagem valendo 0,5 pontos e a frequência das aulas de 17 e 19 de Setembro.
+
+1) Construa, usando o MER, o modelo lógico de banco de dados para os mini-mundos a seguir. Faça o DD (dicionário de dados) do modelo conceitual de dados obtido. O DD deve conter no mínimo:
+
+=> para cada tipo de entidade: conceito que o tipo de entidade representa, identificação e
+características dos seus atributos (conceito, tipo de dado, tamanho, se é obrigatório ou
+opcional, se é multivalorado ou monovalorado, se é identificador, se é simples ou composto,
+relação dos atributos componentes);
+
+=> para cada tipo de relacionamento: conceito que o tipo de relacionamento representa
+identificação e características de possíveis atributos.
+
+1) Considere o seguinte conjunto de requisitos para o banco de dados de uma Instituição bancária denominada Banco XPTO: O Banco XPTO está interessado em controlar as contas correntes e de poupança. Uma conta pode ser individual ou conjunta, sendo que as contas de poupança rendem juros mensais. Uma conta individual pertence a um único cliente, enquanto uma conta conjunta pode ser de vários clientes. Toda conta precisa estar associada à pelo menos um cliente, que é o titular da conta.
+Talões de cheque são emitidos para contas correntes. É preciso controlar a emissão, cobrando uma taxa se for emitido mais de um talão em um período inferior a 30 dias.
+Um cartão magnético individual é emitido para cada cliente associado a uma conta, seja ela poupança ou corrente. Pode haver clientes que dispensam o cartão, mas todo cartão deve estar associado a um cliente e uma conta. Contas correntes podem possuir um limite de crédito além do depositado na conta, ou seja, um cliente pode ter R$ 5.000,00 de limite de crédito e caso ele use esse limite, ele pagará os juros pelos dias utilizados. Contas que possuem este limite de crédito extra são chamadas de contas especiais.
+
+Clientes do banco podem solicitar empréstimos, se eles possuem uma conta corrente ou de poupança. Um empréstimo só é concedido mediante a apresentação de dois avalistas, os quais não precisam ser clientes do Banco XPTO, mas devem comprovar rendimentos e recursos compatíveis com o montante do empréstimo. É preciso armazenar os dados dos avalistas de um empréstimo. Um empréstimo deverá ser pago diretamente na conta do cliente, ou seja, mensalmente é debitado da conta do cliente o valor da parcela do empréstimo. O Sistema precisa controlar o número de parcelas do empréstimo e os pagamentos realizados.
+
+Nota: Faça as suposições que achar necessário para complementar o conjunto de requisitos apresentado. Cada Entidade deve ter no mínimo 10 atributos, além do seu identificador.
+
+2) Considere o seguinte modelo descritivo de BD:
+
+Um passageiro tem um documento de identidade e um nome definido. Um avião é caracterizado por um número de série único e por um modelo. Um assento é uma posição única em um avião, identificada por um código. Um assento é da classe econômica ou executiva. Um avião possui vários assentos e pode ser usado em vários vôos. Um vôo é identificado por um número e utiliza: um avião, um piloto, um aeroporto de partida e outro de chegada. Um passageiro pode reservar um assento em um vôo e efetuar o pagamento com débito em conta ou pelo cartão de crédito. Projete um diagrama que represente este modelo descritivo.
+
+3) Crie uma nova versão o diagrama ER da questão 2, modificando- o para refletir os seguintes fatos:
+
+a) Existem vôos de longa duração que exigem a alocação de mais de um piloto.
+
+b) Passageiros sem reserva não são permitidos no BD.
+
+c) Pode haver conexões entre vôos: um vôo de origem pode fazer conexão com diversos
+vôos de destino.
+
+d) Somente na classe executiva o passageiro pode escolher o tipo de refeição e bebida que deseja
+consumir. Na classe econômica a alimentação e bebidas são pagas. O passageiro pode comprar e pagar com cartão de crédito ou débito os alimentos ou com dinheiro.
+
+4) Um Modelo de Entidade Relacionamento deverá ser construído para manter o controle dos times de futebol, bem como os jogos de uma liga esportiva (por exemplo: Campeonato Brasileiro, Campeonato Europeu,  Campeonato Paulista, Campeonato Goiano, Campeonato Mineiro e etc.). Um time de futebol tem um número de jogadores, dos quais não são todos que participam de um determinado jogo (jogadores do banco de reserva). Deseja-se controlar os treinadores de cada time (Lembre-se um time só tem um treinador, mas um treinador pode treinar um ou mais times em períodos diferentes, ou seja, no início do ano o Felipão pode estar treinando o Corinthians mas terminar o campeonato treinando o Vila Nova de Goiás). Os jogadores, que participam de cada jogo, as posições em que jogaram e o resultado de cada partida de um determinado jogo (que pela lógica sempre envolve dois times). Além disso, para cada jogo é preciso controlar quais foram os árbitros da partida, em qual estádio e cidade o jogo ocorreu. Um jogo ocorre em um determinado estádio e cidade, mas no mesmo estádio podemos ter vários jogos
