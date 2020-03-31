@@ -1,0 +1,34 @@
+java -jar plantuml.jar -charset UTF-8 diagrama18.puml
+@startuml diagrama18
+usecase #LightSalmon "Administrador de BD" as abd
+usecase #LightSalmon Usuário
+usecase #LightSalmon Programador
+rectangle "Compilador DDL" as cdll
+rectangle "Processador do\nbanco de dados em\ntempo de execução" as pbd
+rectangle "Gerenciamento dos\nDados armazenados\n(GDA)" as gda
+rectangle "Controle de Backup" as cb
+rectangle "Pré-compilador" as pc
+rectangle "Compilador DML" as cdml
+agent Pesquisa
+agent "Transação\nCompilada" as tc
+database "Dicionário\nde Dados" as dd
+database "Banco de Dados" as bd
+abd --> cdll : comando\nDDL
+abd --> pbd : comando\nprivilegiado
+cdll -(0)-> dd : GDA
+pbd <-(0)-> dd : GDA
+
+Usuário --> Pesquisa
+Pesquisa <-(0)-> dd : GDA
+Pesquisa --> pbd
+
+Programador --> cdml : comando\nDML
+cdml <-(0)-> dd : GDA
+cdml --> tc
+Programador --> pc : compilador\nda LP
+pc --> tc
+tc --> pbd
+
+pbd <-(0)-> bd : GDA
+cb <-(0)-> bd
+@enduml
