@@ -10,6 +10,7 @@ public class Loja{
         
         Scanner scan = new Scanner(System.in);
         boolean exit = false;
+        int opt;
         List<Produto> loja = new ArrayList<>();
 
         Produto p1 = new Produto(1, "Gayness", 100);
@@ -19,7 +20,13 @@ public class Loja{
 
         while(!exit){
             menu();
-            int opt = Integer.parseInt(scan.nextLine());
+            try{
+                opt = scan.nextInt();
+            } catch (Exception e) {
+                System.out.println(ANSI_RED + "Favor digitar apenas numeros!" + ANSI_RESET);
+                scan.next();
+                continue;
+            }
             switch(opt){
                 case 0:
                     exit = true;
@@ -44,7 +51,10 @@ public class Loja{
         */  
     }
 
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
     private static void menu(){
-        System.out.println("Digite o numero correspondente a opcao que deseja:\n0 - sair\n1 - adicionar produto");
+        System.out.println("---------------------------Menu---------------------------\n0 - sair\n1 - adicionar produto");
+        System.out.print("Digite o numero correspondente a opcao que deseja >>> ");
     }
 }
