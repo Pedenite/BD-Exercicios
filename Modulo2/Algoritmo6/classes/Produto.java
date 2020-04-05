@@ -15,6 +15,6 @@ public class Produto implements Serializable {
 
     @Override
     public String toString(){
-        return "Codigo: " + this.codigo + "\nDescricao: " + this.descricao + "\nQuantidade em estoque: " + qtdEstoque + "\n";
+        return "Codigo: " + this.codigo + "\t| Descricao: " + this.descricao + "\t| Quantidade em estoque: " + qtdEstoque;
     }
 }
