@@ -85,11 +85,13 @@ Um sistema de banco de dados é um sistema que permite abstração de dados isol
 Ele é essencialmente, um mantedor de registros e tem como componentes principais, os dados, o software, o hardware e o usuário.
 
 \section{Algoritmo}
+O algoritmo pode ser encontrado no arquivo \textbf{algoritmo6.jar}, que pode ser executado com o comando \texttt{java -jar algoritmo6.jar} e também pode ser extraído para visualizar o código fonte.
+O algoritmo foi criado seguindo os critérios:
 \begin{itemize}
-\item Criar um algoritmo para criar um arquivo contendo os dados dos produtos de uma loja.
-\item Os campos dos registros são: código do produto, descrição do produto e quantidade do produto em estoque.
-\item O algoritmo deve conter as operações: inclusão de produtos e listagem de todos os produtos.
-\item Deve-se usar a linguagem Java contendo a serialização/desserialização de objetos
+    \item Criar um arquivo \textbf{registro.txt} contendo os dados dos produtos de uma loja ao sair do programa (opção 0).
+    \item Os campos dos registros são: código do produto , descrição do produto e quantidade do produto em estoque.
+    \item Conter as operações: inclusão de produtos (opção 1) e listagem de todos os produtos (opção 2).
+    \item Utilização da linguagem Java contendo a serialização/desserialização de objetos, que ocorre ao finalizar/iniciar o programa.
 \end{itemize}
 
 \section{Administrador de BD x Administrador de dados}
@@ -102,10 +104,14 @@ Dentre as vantagens de se usar uma abordagem de sistema de banco de dados sobre 
 Entretanto, como vantagens para a abordagem de arquivos tradicional, temos que é um padrão aberto, logo não precisa pagar por nenhum \textit{software}, muitas linguagens oferecem suporte amplo para a manipulação de arquivos, é mais simples tanto para o usuário quanto para o computador, permite a construção de aplicações mais facilmente, entre outros.
 
 \section{SGBD no contexto de um SBD}
-Explique o papel de um SGBD no contexto de um Sistema de Bancos de Dados
+O SGBD no contexto de um SBD, se trata de um \textit{software} para dar suporte nas ações realizadas, permitindo o controle, consulta e manipulação dos dados do banco. De forma resumida, o SGBD disponibiliza uma interface que permite a inclusão, alteração e consulta de dados previamente armazenados.
 
 \section{Papéis de usuários de SGBDs}
-Cite e caracterize pelo menos três papéis distintos de usuários de SGBDs
+\begin{itemize}
+    \item \textbf{Usuário final} - É o usuário que vai interagir com o SGBD utilizando diferenters aplicativos. O sistema é desenvolvido para a utilização dele, que não precisa saber da existência do BD.
+    \item \textbf{Desenvolvedor} - É o usuário que vai interagir indiretamente com o SGBD por meio de linguagens de programação e diretamente por meio das linguagens de banco de dados. Assim, ele escreve os códigos que farão as operações com os dados.
+    \item \textbf{Administrador} - É o usuário que vai interagir diretamente com os dados do SGBD. É responsável pela segurança das informações, manter sua consistência, fazer a manutenção do banco, entre outros.
+\end{itemize}
 
 \section{Facilidades de um SGBD para um software}
 Que tipos de facilidades um SGBD deve prover para um software que deseja utilizar um banco de dados?

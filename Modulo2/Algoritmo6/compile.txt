@@ -1,0 +1,10 @@
+javac classes/*.java main/*.java
+java main.Main
+
+------------------------------or------------------------------
+
+tudo ---------------------------------> jar cvfm algoritmo6.jar manifest.txt *
+apenas os pacotes (.class e .java) ---> jar cvfm algoritmo6.jar manifest.txt classes main
+apenas executavel --------------------> jar cvfm algoritmo6.jar manifest.txt classes/*.class main/*.class
+
+para executar ------------------------> java -jar algoritmo6.jar

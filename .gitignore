@@ -283,3 +283,6 @@ TSWLatexianTemp*
 
 # java
 *.class
+!algoritmo6.jar
+registro.txt
+produtos.bin
