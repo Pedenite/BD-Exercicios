@@ -3,7 +3,7 @@ java -jar plantuml.jar -charset UTF-8 diagrama18.puml
 usecase #LightSalmon "Administrador de BD" as abd
 usecase #LightSalmon Usuário
 usecase #LightSalmon Programador
-rectangle "Compilador DDL" as cdll
+rectangle "Compilador DDL" as cddl
 rectangle "Processador do\nbanco de dados em\ntempo de execução" as pbd
 rectangle "Gerenciamento dos\nDados armazenados\n(GDA)" as gda
 rectangle "Controle de Backup" as cb
@@ -13,9 +13,9 @@ agent Pesquisa
 agent "Transação\nCompilada" as tc
 database "Dicionário\nde Dados" as dd
 database "Banco de Dados" as bd
-abd --> cdll : comando\nDDL
+abd --> cddl : comando\nDDL
 abd --> pbd : comando\nprivilegiado
-cdll -(0)-> dd : GDA
+cddl -(0)-> dd : GDA
 pbd <-(0)-> dd : GDA
 
 Usuário --> Pesquisa
