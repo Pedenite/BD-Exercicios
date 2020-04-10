@@ -119,12 +119,22 @@ Os SGBDs devem permitir ao \textit{software} o rápido acesso às informações 
 Como último exemplo, pórem não menos importante, outra facilidade que o SGBD deve prover ao \textit{software} que utiliza BD são as conexões com o banco, que deve ser disponibilizada para a linguagem de programação poder utilizar de seus recursos de forma ágil e precisa sem ter problemas.
 
 \section{Redundância em BD}
-Explique o conceito de redundância em BD. Caracterize a diferença entre redundância controlada e não-controlada em um SGBD
+Redundância em um banco de dados é quando se tem uma informação duplicada, por exemplo se tem uma tabela armazenando dados das pessoas em geral e outra com dados de funcionários. Assim, cria-se uma coluna \texttt{nome\_pessoa} em uma tabela e outra \texttt{nome\_funcionário} na outra tabela, repetindo a informação em alguns casos.
+
+Existem dois tipos de redundância:
+\begin{enumerate}
+    \item \textbf{Controlada} - O \textit{software} tem conhecimento da redundância e procura trabalhá-la com sincronia, com o objetivo de melhorar o desempenho, por exemplo.
+    \item \textbf{Não-controlada} - O \textit{software} não tem conhecimento da redundância e a sincronia depende de meios externos, como o usuário.
+\end{enumerate}
 
 \section{Integridade e Consistência em BD}
-Defina os conceitos de integridade e de consistência em Bancos de Dados
+O conceito de integridade em BD se refere às regras impostas no relacionamento que visa a manutenção dos dados, sem violar as propriedades dos mesmos. Já a consistência não permite que se fique em um estado incorreto durante as operações, não violando as restrições de integridade do banco.
+
+Ambos os conceitos servem para que o banco de dados sempre possa fornecer informações confiáveis aos usuários.
 
 \section{Quando usar BD é Desaconselhável?}
-Dê pelo menos dois exemplos de situações em que seria desaconselhável usar a abordagem de BD para suporte a um software?
+Apesar de todas as vantagens que um banco de dados pode oferecer para suporte a um \textit{software}, existem situações em que o seu uso é desaconselhável.
+Um exemplo disso\dots
+%Dê pelo menos dois exemplos de situações em que seria desaconselhável usar a abordagem de BD para suporte a um software?
 
 \end{document}
